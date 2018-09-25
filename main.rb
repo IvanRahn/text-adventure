@@ -66,8 +66,6 @@ puts "WHAT IS THAT?"
 sleep(5)
 puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
 sleep(2)
-puts "*WUBBAFETTTTTTT*"
-sleep(1)
 puts "Do you want to (1) run or (2) stay and fight?"
 fightorflight = gets.chomp.to_i
 if fightorflight == 1 then
@@ -97,4 +95,6 @@ elsif fightorflight == 2 then
   puts "Meowth!"
   sleep(0.7)
   puts "That's right!"
+  sleep(3)
+  puts "*WUBBAFETTTTTTT*"
 end
