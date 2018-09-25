@@ -88,16 +88,16 @@ menu.body = { text: body_text, choices: body_choices, color: :white }
 menu.display_menu
 case gets.chomp.downcase
 when "1", "Continue"
-  body_text += "You continue down the shady forest path"
+  body_text = "You continue down the shady forest path"
 when "2", "Enter the tall grass"
-  body_text += "The grass is almost as tall as you!"
+  body_text = "The grass is almost as tall as you!"
   sleep(1)
   body_text += "Walking around the tall grass you hear some rustling. What could it be?"
   sleep(1)
   body_text += "..."
   sleep(1)
   body_text += "You have encoutered a wild Ratata! What are you going to do?"
-  body_choices ["Run", "Fight"]
+  body_choices = ["Run", "Fight"]
   menu.body = { text: body_text, choices: body_choices, color: :white }
   menu.display_menu
 end
