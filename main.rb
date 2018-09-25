@@ -1,9 +1,14 @@
+# Introduction
 puts "Welcome to Pokemon conflict, a text adventure where your Generation I Pokemon of choice will battle in a fierce duel."
 puts "..."
-puts "You have stumbled into the lab, where professor Oak has created four starter pokemon for you to choose from - Squirtle, Pikachu, Charmander, Bulbasaur."
+puts "Please enter your name."
+name = gets.chomp
+puts "..."
+
+# Choosing Starter pokemon
+puts "Thanks for joining Pokeworld today #{name}. You have stumbled into the lab, where professor Oak has created four starter pokemon for you to choose from - Squirtle, Pikachu, Charmander, Bulbasaur."
 puts
 puts "Who do you select? Choose wisely - as your life lies in it's fate."
-
 mypokey = gets.chomp.downcase
 
 if mypokey == "squirtle" then
@@ -15,5 +20,3 @@ elsif mypokey == "charmander" then
 elsif mypokey == "bulbasaur" then
     puts "you have chosen Bulbasaur, good choice!"
 end
-
-
