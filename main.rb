@@ -1,5 +1,3 @@
-
-
 # Introduction
 puts "Welcome to Pokemon conflict, a text adventure where your Generation I Pokemon of choice will battle in a fierce duel."
 puts "..."
@@ -32,4 +30,11 @@ when "east" then puts "Turning your face in the direction of the sun hanging ove
 when "west" then puts "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day
   in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
 end
+case gets.chomp.downcase.to_s
+when "east" puts "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
+case    gets.chomp.downcase.to_s 
+when "yes" then puts" You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!! 
+What do you wish to do? Battle or run?" 
+when "no" then puts "No, grow up and continue your journey!"
+end 
 
