@@ -69,10 +69,8 @@ sleep(2)
 puts "Do you want to (1) run or (2) stay and fight?"
 fightorflight = gets.chomp.to_i
 if fightorflight == 1 then
-  fightorflight = "path1"
   puts "You've sprinted back to the split, I guess the only way for you to go is through the scorching heat into the Mystical Mountain."
 elsif fightorflight == 2 then
-  fightorflight = "path2"
   puts "Prepare for trouble!"
   puts "And make it double!"
   puts "To protect the world from devastation!"
