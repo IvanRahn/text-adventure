@@ -21,6 +21,7 @@ body_text += "You have stumbled into the lab, where professor Oak has created fo
 body_text += "Who do you select? Choose wisely - as your life lies in it's fate."
 body_choices = ["Squirtle", "Pikachu", "Charmander", "Bulbasaur"]
 menu.body = { text: body_text, choices: body_choices }
+
 choice = 0
 while choice < 1 || choice > 4
   menu.display_menu
@@ -38,18 +39,16 @@ you feel like everything is possible! Which way do you choose to go, east or wes
 menu.body = { text: body_text }
 menu.display_menu
 
-case gets.chomp.downcase.to_s
-when "east" then puts "Turning your face in the direction of the sun hanging over the horizon you
+direction = gets.chomp
+case direction
+when "east" then
+  puts "Turning your face in the direction of the sun hanging over the horizon you
   head towards the beautifull Mystical Mountains"
-when "west" then puts "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day
-  in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
+  puts "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
+  case gets.chomp.downcase.to_s
+  when "yes" then puts" You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
+  What do you wish to do? Battle or run?"
+  when "no" then puts "No, grow up and continue your journey!"
+  end
+when "west" then puts "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
 end
-case gets.chomp.downcase.to_s
-when "east" then puts "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
-end
-case gets.chomp.downcase.to_s
-when "yes" then puts" You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
-What do you wish to do? Battle or run?"
-when "no" then puts "No, grow up and continue your journey!"
-end
-
