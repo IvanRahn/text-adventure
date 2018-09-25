@@ -38,7 +38,7 @@ puts "You have chosen #{mypokey}, wise choice!\n"
 sleep(1)
 body_text = "You have exited the house where you grew up. In front of you is the street where you spent countless days playing
 and enjoying your childhood. The sun is just starting to rise in the East over the majestic Mystical Mountains covered by fog.
-To the west you can see the slight outline of the treetops in the Funky Forest. Now with your new pokemon friend
+To the west you can see the slight outline of the treetops in the Funky Forest. Now with your new Pokemon friend
 you feel like everything is possible! Which way do you choose to go, east or west?"
 menu.body = { text: body_text }
 menu.display_menu
@@ -46,9 +46,9 @@ menu.display_menu
 direction = gets.chomp
 case direction
 when "east" then
-  puts "Turning your face in the direction of the sun hanging over the horizon you
-  head towards the beautifull Mystical Mountains"
-  puts "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
+
+  puts "Turning your face in the direction of the sun hanging over the horizon, you head towards the beautiful Mystical Mountains"
+  puts "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your first battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
   sleep(1)
 
   case gets.chomp.downcase.to_s
@@ -58,3 +58,12 @@ when "east" then
   end
 when "west" then puts "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
 end
+
+sleep(5)
+puts "...*slow walk through the bright green grass*..."
+sleep(5)
+puts "WHAT IS THAT?"
+sleep(5)
+puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
+sleep(2)
+puts "*WUBBAFETTTTTTT*"
