@@ -79,6 +79,19 @@ when "2", "west" then
   menu.body = { text: body_text, color: :white }
   system("clear")
   menu.display_menu
+sleep(1)
+body_text += "You have arrived in the Funky Forest. The shade is a nice relief from the sun and you can feel the\
+smell the forest is famous for. Walking down the path you see a patch of tall grass on the side.
+Do you want to continue down the path or enter the tall grass?"
+body_choices = ["Continue", "Enter the tall grass"]
+menu.body = { text: body_text, choices: body_choices, color: :white }
+menu.display_menu
+case gets.chomp.downcase
+when "1", "Continue"
+  body_text += "You continue down the shady forest path"
+when "2", "Enter the tall grass"
+  body_text += "The grass is almost as tall as you!"
+end
 end
 
 sleep(5)
