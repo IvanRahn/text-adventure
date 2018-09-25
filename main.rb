@@ -102,4 +102,33 @@ puts "WHAT IS THAT?"
 sleep(5)
 puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
 sleep(2)
-puts "*WUBBAFETTTTTTT*"
+puts "Do you want to (1) run or (2) stay and fight?"
+fightorflight = gets.chomp.to_i
+if fightorflight == 1 then
+  puts "You've sprinted back to the split, I guess the only way for you to go is through the scorching heat into the Mystical Mountain."
+elsif fightorflight == 2 then
+  puts "Prepare for trouble!"
+  puts "And make it double!"
+  puts "To protect the world from devastation!"
+  sleep(0.7)
+  puts "To unite all peoples within our nation!"
+  sleep(0.7)
+  puts "To denounce the evils of truth and love!"
+  sleep(0.7)
+  puts "To extend our reach to the stars above!"
+  sleep(0.7)
+  puts "Jessie!"
+  sleep(0.7)
+  puts "James!"
+  sleep(0.7)
+  puts "Team Rocket blasts off at the speed of light!"
+  sleep(0.7)
+  puts "Surrender now, or prepare to fight!"
+  sleep(0.7)
+  puts 
+  puts "Meowth!"
+  sleep(0.7)
+  puts "That's right!"
+  sleep(3)
+  puts "*WUBBAFETTTTTTT*"
+end
