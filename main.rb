@@ -91,6 +91,15 @@ when "1", "Continue"
   body_text += "You continue down the shady forest path"
 when "2", "Enter the tall grass"
   body_text += "The grass is almost as tall as you!"
+  sleep(1)
+  body_text += "Walking around the tall grass you hear some rustling. What could it be?"
+  sleep(1)
+  body_text += "..."
+  sleep(1)
+  body_text += "You have encoutered a wild Ratata! What are you going to do?"
+  body_choices ["Run", "Fight"]
+  menu.body = { text: body_text, choices: body_choices, color: :white }
+  menu.display_menu
 end
 end
 
@@ -125,7 +134,7 @@ elsif fightorflight == 2 then
   sleep(0.7)
   puts "Surrender now, or prepare to fight!"
   sleep(0.7)
-  puts 
+  puts
   puts "Meowth!"
   sleep(0.7)
   puts "That's right!"
