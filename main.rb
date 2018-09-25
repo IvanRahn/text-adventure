@@ -37,3 +37,4 @@ when "east" then
   end
 when "west" then puts "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
 end
+
