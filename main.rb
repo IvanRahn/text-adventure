@@ -18,7 +18,8 @@ puts "..."
 # Choosing Starter pokemon
 body_text = "Thanks for joining Pokeworld today #{name}. You have stumbled into the lab, where professor Oak has created four starter pokemon for you to choose from - 1) Squirtle, 2) Pikachu, 3) Charmander, 4) Bulbasaur."
 body_text += "\n"
-body_text += "Who do you select? Choose wisely - as your life lies in it's fate.
+body_text += "Who do you select? Choose wisely - as your life lies in it's fate."
+menu.body = { text: body_text }
 choice = 0
 while choice < 1 || choice > 4
   menu.display_menu
