@@ -53,10 +53,9 @@ direction = gets.chomp.downcase
 case direction
 when "1", "east" then
 
-  body_text += "Turning your face in the direction of the sun hanging over the horizon you
+  body_text += "Turning your face in the direction of the sun hanging over the horizon you"
 
   body_text += "Turning your face in the direction of the sun hanging over the horizon you \
-
   head towards the beautifull Mystical Mountains"
   body_text += "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
   body_choices = ["Yes", "No"]
@@ -66,8 +65,7 @@ when "1", "east" then
 
   case gets.chomp.downcase.to_s
 
-  when "1", "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
-    What do you wish to do?" 
+  when "1", "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!! What do you wish to do?" 
     body_choices = ["Battle", "Run"]
     menu.body = { text: body_text, choices: body_choices, color: :white }
     menu.display_menu 
