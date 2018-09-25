@@ -48,7 +48,7 @@ menu.display_menu
 
 direction = gets.chomp.downcase
 case direction
-when "1" || "east" then
+when "1", "east" then
   body_text += "Turning your face in the direction of the sun hanging over the horizon you
   head towards the beautifull Mystical Mountains"
   body_text += "You have arrived at Mystical Mountains. You notice that there is something mystical in the air which makes you feel confident for your next battle. You see a path leading up the main mountain which is filled with danger, do you wish to proceed?"
@@ -58,27 +58,44 @@ when "1" || "east" then
   sleep(1)
 
   case gets.chomp.downcase.to_s
-  when "1" || "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
-    What do you wish to do?"
+  when "1", "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
+    What do you wish to do?" 
     body_choices = ["Battle", "Run"]
     menu.body = { text: body_text, choices: body_choices, color: :white }
-    menu.display_menu
-  when "2" || "no" then
+    menu.display_menu 
+  gets.chomp.downcase.to_s
+  when "2", "no" then
     body_text = "No, grow up and continue your journey!"
     menu.body = { text: body_text, color: :white }
     menu.display_menu
   end
-when "2" || "west" then
+when "2", "west" then
   body_text = "Feeling the sun on your skin you realize that today is going to be quite hot. Spending the day in the treeshade in the Funky Forest might be a good idea. You turn west and begin your journey."
   menu.body = { text: body_text, color: :white }
   menu.display_menu
 end
 
-sleep(5)
+sleep(3)
 puts "...*slow walk through the bright green grass*..."
-sleep(5)
+sleep(3)
 puts "WHAT IS THAT?"
-sleep(5)
+sleep(3)
 puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
 sleep(2)
-puts "*WUBBAFETTTTTTT*"
+puts "*WUBBAFETTTTTTT*" 
+puts "GAME OVER" 
+sleep (2) 
+puts "...?" 
+sleep(2) 
+puts "Try again?" 
+case gets.chomp.downcase.to_s
+when "1", "yes" then body_text = "A Charizard comes out of nowhere and blasts Team Rocket to Never Land. You decide to ignore them and continue your journey. You start the dangerous climb and struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
+  What do you wish to do?"
+  body_choices = ["Battle", "Run"]
+  menu.body = { text: body_text, choices: body_choices, color: :white }
+  menu.display_menu
+when "2", "no" then
+  body_text = "Team Rocket Wins ¯\\_(ツ)_/¯ "
+  menu.body = { text: body_text, color: :white }
+  menu.display_menu
+end
