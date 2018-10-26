@@ -65,10 +65,10 @@ when "1", "east" then
 
   case gets.chomp.downcase.to_s
 
-  when "1", "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!! What do you wish to do?" 
+  when "1", "yes" then body_text = "You decide to continue and start the dangerous climb. You struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!! What do you wish to do?"
     body_choices = ["Battle", "Run"]
     menu.body = { text: body_text, choices: body_choices, color: :white }
-    menu.display_menu 
+    menu.display_menu
   gets.chomp.downcase.to_s
 
   when "1", "yes" then
@@ -114,25 +114,22 @@ when "2", "Enter the tall grass"
 end
 end
 
-
 sleep(3)
-
-sleep(5)
 system("clear")
 
 puts "...*slow walk through the bright green grass*..."
-sleep(3)
-puts "WHAT IS THAT?"
-sleep(3)
-puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
 sleep(2)
+puts "WHAT IS THAT?"
+sleep(2)
+puts "OH NO, IT'S TEAM ROCKET AND THEY HAVE COME TO SPOIL OUR DAY."
+sleep(1)
 
-puts "*WUBBAFETTTTTTT*" 
-puts "GAME OVER" 
-sleep (2) 
-puts "...?" 
-sleep(2) 
-puts "Try again?" 
+puts "*WUBBAFETTTTTTT*"
+puts "GAME OVER"
+sleep (2)
+puts "...?"
+sleep(2)
+puts "Try again?"
 case gets.chomp.downcase.to_s
 when "1", "yes" then body_text = "A Charizard comes out of nowhere and blasts Team Rocket to Never Land. You decide to ignore them and continue your journey. You start the dangerous climb and struggle along the way taking a few falls and bruises but your determination to catch them all keeps you going. You arrive at the half way mark when you hear a disturbing noise above you. A WILD POKEMON JUMPED AT YOU...IT'S A MANKEY!!!
   What do you wish to do?"
@@ -172,7 +169,7 @@ elsif fightorflight == 2 then
   puts "Meowth!"
   sleep(0.7)
   puts "That's right!"
-  sleep(3)
+  sleep(1)
   puts "*WUBBAFETTTTTTT*"
 end
 
